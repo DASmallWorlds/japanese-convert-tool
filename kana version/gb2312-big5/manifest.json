@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Convert JP Kanji",
+  "default_locale": "en",
+  "short_name": "ConJP",  
+  "version": "0.18",
+  "browser_action": {
+     "default_icon": "icon.png",
+     "default_title": "Convert JP Kanji",
+     "default_popup": "main.html"
+  },
+  "offline_enabled": true,
+  "author": "DASmallWorlds / justyy<dr.zhihua.lai@gmail.com>",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },  
+  "description": "Modified Version of Convert Automatically to Chinese (Pinyin, Cantonese GB2312 and BIG5 for Japanese kanji/)",
+  "web_accessible_resources": [
+  		"js/*", 
+  		"images/*",
+  		"bs/*"
+  ],
+  "permissions": [
+     "storage"
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },  
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js":[
+          "js/pinyin.js",
+          "js/dialect.js",
+          "js/convert.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+  }]  
+}
