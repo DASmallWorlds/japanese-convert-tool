@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="UTF-8"/>
+    <title>日本語変換ツール (漢字版)</title>
+    <meta name="author" content="https://weibomiaopai.com">
+    <script src="js/jquery.js"></script>
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bs/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div id="tabs" class='ext-window'>
+      <ul>
+          <li><a id="text_setting" href="#tabs-setting">Setting</a></li>
+          <li><a id="text_log" href="#tabs-log">Log</a></li>
+      </ul>
+      <div id="tabs-setting">
+          <div>
+            Refresh the page for changes to take effect. <BR/>
+            変更を有効にするには、ページを更新してください。。<BR/>
+          </div>
+          <BR/>
+          General Kanji Conversion <BR/>
+          (Does not affect 弁, 予, 余. Please use fine character conversion.) <BR/>
+          <select id=setting name=setting class='form-control'>
+            <option value="off" selected>オフ Turn Off</option>
+            <option value="zh-cn">新字体 Shinjitai</option>
+            <option value="zh-tw">舊字體 Kyūjitai</option>
+            <option value="pinyin">拼音 Pinyin note: remnant of base plugin</option>
+          </select>
+          <BR/>
+          Fine Character Conversion <BR/>
+          (May contain errors) <BR/>
+          <select id=dialect name=dialect class='form-control'>
+            <option value="off" selected>オフ Turn Off</option>
+            <option value="chinese">Turn On Kanji Only</option>
+            <option value="zh-tw">Activate Traditional Kana and Kanji</option>
+          </select>          
+          <BR/>          
+          <!--<a href="https://justyy.com/tools/chinese-converter/?ref=chrome_extension" target=_blank><img src='images/chinese.jpg' /><BR/><B><font color=blue>在线转换工具</font></B></a>--><BR/>
+          <BR/>
+          <!--<a href="https://helloacm.com/out/buymecoffee" target="_blank"><img src="images/lato-blue.png" alt="Buy Me A Coffee" style="height: 40px !important" ></a>-->
+          <BR/>
+          <!--支持我的工作，<a href="https://chrome.google.com/webstore/detail/olpihmabpjpllgmahlgiakkgaccigpfo" target=_blank><b><font color=blue>给我评个分，给个好评呗</font></b>，</a>感谢。-->
+      </div>
+      <div id="tabs-log">
+          <h5><span id='proudly_brought_to_you_by'>Modified By DASmallWorlds; original creator: </span> <a target=_blank href="https://justyy.com">@justyy</a> (<a target=_blank id='report_bugs' href="https://steakovercooked.com/Contact.Mail?title=Chinese+Tools">Report Bugs</a>)        
+          </h5>
+          <h6>
+             <a target=_blank href="https://github.com/DoctorLai/Simplified-and-Traditional-Chinese"><B><span id='source_code'>Source Code</span></B>: https://github.com/DoctorLai/Simplified-and-Traditional-Chinese</a>
+          </h6>
+          <!-- <textarea readonly class='form-control' rows=9 id='about'>
+          </textarea> -->
+          <BR/>
+          <!--
+          <a target=_blank href='https://www.paypal.me/doctorlai/3'><img src='images/paypal.png' class='banner'></a> &nbsp;
+          <a target=_blank href='https://justyy.com/out/bitcoin'><img src='images/bitcoin.jpg' class='banner'></a>
+          &nbsp;
+          <a target=_blank href='https://justyy.com/out/vultr2'><img title='Free $10 VPS' src='images/vultr.jpg' class='banner'></a>
+          &nbsp;
+          <a target=_blank href='https://justyy.com/out/linode'><img title='Free $20 VPS' src='images/linode.jpg' class='banner'></a>            
+          &nbsp;
+          <a target=_blank href='https://justyy.com/out/do'><img title='Free $10 VPS' src='images/digitalocean.jpg' class='banner'></a>  -->              
+      </div>        
+      <div id='vpsdiv' style='text-align:center'>
+        <!--
+          <I><span id='vpspromotion' style='color:gray'>VPS Promotions</span></I>
+          <B>
+          <a target=_blank href='https://justyy.com/out/vultr2'>Vultr ($10)</a> | <a target=_blank href='https://justyy.com/out/linode'>Linode ($20)</a> | <a target=_blank href='https://justyy.com/out/do'>Digital Ocean ($10)</a>                
+          </B>-->
+      </div>        
+    </div>
+  </body>
+</html>
