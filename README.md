@@ -1,3 +1,4 @@
+## English
 # Japanese Converter
 - Google Chrome extension that dynamically converts kanji and kana to their traditional forms (and vice versa for kanji only)
 - Refresh the page if you do not see changes
